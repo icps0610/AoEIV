@@ -9,9 +9,9 @@
     <div class="container-flud">
         <form>
         <div class="row">            
-            <input id="race1" class="race">
-            <input value="VS" class="race">
-            <input id="race2" class="race">
+            <input id="race1" class="race" readonly>
+            <div class="race">VS</div>
+            <input id="race2" class="race" readonly>
             <button type="button" class="btn btn-light" onclick="Roll()">Random</button>
         </form>
     </div>
@@ -33,7 +33,7 @@
     margin-top: 15px;
     text-align: center;
     border: none;
-
+    outline: none;
 }
 </style>
 <script>
