@@ -39,7 +39,7 @@
 <script>
 var race = ["英格蘭", "中國", "法蘭西", "羅馬", "蒙古", "羅斯", "蘇丹", "阿拔斯"];
 var min = 50;
-var max = 200;
+var max = 250;
 
 function Roll() {
     RandomRoll('race1')
@@ -51,7 +51,6 @@ function RandomRoll(id) {
     var exit = Math.random() * (max - min) + min;
     var change = setInterval(function() {
         i++;
-        document.getElementById(id).value = ""
         document.getElementById(id).value = race[Math.floor(Math.random() * race.length)];
         if (i > exit) {
             clearInterval(change)
